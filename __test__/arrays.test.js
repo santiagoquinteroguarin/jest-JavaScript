@@ -1,4 +1,4 @@
-import { arrayColors, arrayFruits } from '../arrays';
+import { arrayColors, arrayFruits, arraySports } from '../arrays';
 
 describe('Comprobar que existe un elemento', () => {
     test('¿Contiene una manzana?', () => {
@@ -15,5 +15,9 @@ describe('Comprobar que existe un elemento', () => {
     
     test('Negacion - el tamaño de un array', () => {
         expect(arrayColors()).not.toHaveLength(15);
+    });
+
+    test('¿Contiene ⚽?', () => {
+        expect(arraySports()).toContain('⚽');
     });
 });
